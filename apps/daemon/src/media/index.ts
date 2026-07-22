@@ -1149,7 +1149,6 @@ async function renderComfyUIImage(ctx: MediaContext, credentials: ProviderConfig
       headers,
       body: JSON.stringify(body),
     })),
-    'comfyui',
   );
 
   const data = await parseOpenAICompatibleJson(resp, 'comfyui');
